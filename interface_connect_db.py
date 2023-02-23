@@ -64,6 +64,8 @@ def create():
 
         email_string.set('')
 
+    database.close()
+
 #========================================Funtion read========================================================  
 
 def read():
@@ -92,6 +94,8 @@ def read():
 
         messagebox.showwarning('Database', 'User does not exist yet')
 
+    database.close()
+
 #========================================Funtion update========================================================
 
 def update():
@@ -116,6 +120,8 @@ def update():
 
         messagebox.showwarning('Database', 'User does not exist yet')
 
+    database.close()
+
 #========================================Funtion delete========================================================
 
 def delete():
@@ -135,6 +141,8 @@ def delete():
     except:
         
         messagebox.showwarning('Database', 'User does not exist yet')
+
+    database.close()
 
 #=======================================Menu and submenu=====================================================================
 

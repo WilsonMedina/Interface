@@ -23,4 +23,6 @@ def conetion_database():
     except:
 
         messagebox.showwarning('Warning', 'Database already exists')
+
+    database.close()
         
